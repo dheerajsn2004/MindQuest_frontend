@@ -1,5 +1,5 @@
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Button from "../components/Button";
@@ -179,12 +179,11 @@ const SignUp = () => {
 
           <p className="text-center mt-3">
             Already have an account?{" "}
-            <span
-              onClick={() => navigate("/login")}
+            <Link to="/login"
               className="text-green-500 cursor-pointer"
             >
               Log in
-            </span>
+            </Link>
           </p>
         </form>
       </section>
