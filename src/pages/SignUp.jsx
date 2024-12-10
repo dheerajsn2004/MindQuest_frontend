@@ -179,12 +179,11 @@ const SignUp = () => {
 
           <p className="text-center mt-3">
             Already have an account?{" "}
-            <span
-              onClick={() => navigate("/login")}
+            <link to="/login"
               className="text-green-500 cursor-pointer"
             >
               Log in
-            </span>
+            </link>
           </p>
         </form>
       </section>
